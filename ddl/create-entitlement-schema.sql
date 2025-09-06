@@ -46,7 +46,7 @@ CREATE TABLE row_filter_rule (
 );
 
 COMMENT ON TABLE row_filter_rule IS 'Row-level predicate rule against a table/column.';
-COMMENT ON COLUMN row_filter_rule.schema_name     IS 'Oracle schema/owner of target table.';
+COMMENT ON COLUMN row_filter_rule.schema_name     IS 'Schema/owner of target table.';
 COMMENT ON COLUMN row_filter_rule.table_name      IS 'Target table name.';
 COMMENT ON COLUMN row_filter_rule.column_name     IS 'Column used in the predicate.';
 COMMENT ON COLUMN row_filter_rule.match_value     IS 'Value/pattern/list used by operator.';
@@ -63,7 +63,7 @@ CREATE TABLE column_mask_rule (
 );
 
 COMMENT ON TABLE column_mask_rule IS 'Column-level masking/transformation rule.';
-COMMENT ON COLUMN column_mask_rule.schema_name    IS 'Oracle schema/owner of target table.';
+COMMENT ON COLUMN column_mask_rule.schema_name    IS 'Schema/owner of target table.';
 COMMENT ON COLUMN column_mask_rule.table_name     IS 'Target table name.';
 COMMENT ON COLUMN column_mask_rule.column_name    IS 'Column to be masked.';
 COMMENT ON COLUMN column_mask_rule.mask_algorithm IS 'Masking algorithm (enumerated).';
